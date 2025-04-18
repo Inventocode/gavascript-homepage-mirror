@@ -23,10 +23,10 @@ export default defineConfig({
       { text: '下载', link: '/download' }
     ],
     lastUpdated: {
-      text: 'Updated at',
+      text: '最后更新于',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'medium'
+        timeStyle: 'medium',
       }
     },
     sidebar: [
@@ -35,9 +35,11 @@ export default defineConfig({
       { text: '许可条款', link: '/许可条款' },
       { text: 'GavaScript之禅', link: '/GavaScript之禅' },
       {
-        text: 'GavaScript 1.x', items: [
-          { text: '插件', link: '/GavaScript 1.x/插件' },
+        text: 'GavaScript 1.x',
+        items: [
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
+          { text: '插件', link: '/GavaScript 1.x/插件' },
+          { text: 'CLI', link: '/GavaScript 1.x/CLI' },
           { text: '', link: '' },
         ]
       },
