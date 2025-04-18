@@ -41,6 +41,20 @@ export default defineConfig({
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
           { text: '插件', link: '/GavaScript 1.x/插件' },
           { text: 'CLI', link: '/GavaScript 1.x/CLI' },
+          { text: '底层语法', link: '/GavaScript 1.x/底层语法' },
+          {
+            text: '方法',
+            collapsed: true,
+            items: [
+              { text: '输入', link: '/GavaScript 1.x/方法/输入' },
+              { text: '输出', link: '/GavaScript 1.x/方法/输出' },
+              { text: '分支', link: '/GavaScript 1.x/方法/分支' },
+              { text: '循环', link: '/GavaScript 1.x/方法/循环' },
+              { text: '文件', link: '/GavaScript 1.x/方法/文件' },
+              { text: '运算', link: '/GavaScript 1.x/方法/运算' },
+              { text: '数据', link: '/GavaScript 1.x/方法/数据' },
+            ]
+          },
           { text: '', link: '' },
         ]
       },
@@ -53,7 +67,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '建议与反馈', 
+        text: '建议与反馈',
         collapsed: false,
         items: [
           { text: '反馈查询', link: 'https://ccnqubr58jmo.feishu.cn/share/base/view/shrcnzq7Rvf9NxJKRPUOxW5YUxe' },
