@@ -36,6 +36,7 @@ export default defineConfig({
       { text: 'GavaScript之禅', link: '/GavaScript之禅' },
       {
         text: 'GavaScript 1.x',
+        collapsed: false,
         items: [
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
           { text: '插件', link: '/GavaScript 1.x/插件' },
@@ -44,13 +45,25 @@ export default defineConfig({
         ]
       },
       {
-        text: '建议与反馈', items: [
+        text: 'GavaScript-Web',
+        collapsed: false,
+        items: [
+          { text: '更新日志', link: '/GavaScript-Web/更新日志' },
+          { text: '', link: '' },
+        ]
+      },
+      {
+        text: '建议与反馈', 
+        collapsed: false,
+        items: [
           { text: '反馈查询', link: 'https://ccnqubr58jmo.feishu.cn/share/base/view/shrcnzq7Rvf9NxJKRPUOxW5YUxe' },
           { text: '提交反馈', link: 'https://ccnqubr58jmo.feishu.cn/share/base/form/shrcncDoBEosgzREGYQLK7nclyh' },
         ]
       },
       {
-        text: '交流群', items: [
+        text: '交流群',
+        collapsed: false,
+        items: [
           { text: '群规', link: '/交流群/群规' },
           { text: '违规记录1', link: '' },
           { text: '违规记录2', link: '' },

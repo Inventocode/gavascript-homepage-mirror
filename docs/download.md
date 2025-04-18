@@ -8,16 +8,14 @@ hero:
     - theme: brand
       text: GS1 v0.7.1 (LATEST)
       link: 
-    - theme: alt
-      text: GS1 25w12b (SNAPSHOT)
-      link: 
     - theme: brand
       text: GS-Web v0.0.2 (LATEST)
       link: 
 ---
-# 更多……
+# 更多下载……
 ## GavaScript 1.x
-
+无
 ## GavaScript-Web
-
+无
 ## GavaScript 2.x
+无
