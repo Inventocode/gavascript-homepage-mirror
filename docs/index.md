@@ -97,7 +97,7 @@ const members = [
     name: '白颜料',
     title: 'WGS 开发',
     links: [
-      { icon: 'amazonsimpleemailservice', link: 'mailto:375170670@qq.com' }
+      { icon: email_icon, link: 'mailto:375170670@qq.com' }
     ]
   },
 ]
