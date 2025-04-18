@@ -12,10 +12,15 @@ hero:
       text: GS-Web v0.0.2 (LATEST)
       link: 
 ---
-# 更多下载……
-## GavaScript 1.x
+::: details GavaScript 1.x
 无
-## GavaScript-Web
+:::
+::: details GavaScript-Web
 无
-## GavaScript 2.x
+:::
+::: details GavaScript 2.x
 无
+:::
+::: details Codekpy开发的“GS3”
+无
+:::

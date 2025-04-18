@@ -18,9 +18,16 @@ export default defineConfig({
       label: '目录'
     },
     logo: '/icon.svg',
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '下载', link: '/download' }
+    nav: [{
+        text: '手册',
+        items: [
+          { text: '总览', link: '/欢迎来到GavaScript手册' },
+          { text: 'GavaScript 1.x', link: '/GavaScript 1.x' },
+          { text: 'GavaScript-Web', link: '/GavaScript-Web' }
+        ]
+      },
+      { text: '下载', link: '/download' },
+      
     ],
     lastUpdated: {
       text: '最后更新于',
@@ -37,6 +44,7 @@ export default defineConfig({
       {
         text: 'GavaScript 1.x',
         collapsed: false,
+        link: '/GavaScript 1.x',
         items: [
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
           { text: '插件', link: '/GavaScript 1.x/插件' },
@@ -61,6 +69,7 @@ export default defineConfig({
       {
         text: 'GavaScript-Web',
         collapsed: false,
+        link: '/GavaScript-Web',
         items: [
           { text: '更新日志', link: '/GavaScript-Web/更新日志' },
           { text: '', link: '' },
