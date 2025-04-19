@@ -14,16 +14,26 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    editLink:{
+      pattern: 'https://gitee.com/gavascript-dev/homepage/blob/master/docs/:path',
+      text: '在 Gitee 上编辑此页面'
+    },
     outline: {
       label: '目录'
     },
     logo: '/icon.svg',
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '下载', link: '/download' }
+    nav: [{
+      text: '手册',
+      items: [
+        { text: '总览', link: '/欢迎来到GavaScript手册' },
+        { text: 'GavaScript 1.x', link: '/GavaScript 1.x' },
+        { text: 'GavaScript-Web', link: '/GavaScript-Web' }
+      ]
+    },
+    { text: '下载', link: '/download' },
     ],
     lastUpdated: {
-      text: 'Updated at',
+      text: '最后更新于',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
@@ -35,14 +45,45 @@ export default defineConfig({
       { text: '许可条款', link: '/许可条款' },
       { text: 'GavaScript之禅', link: '/GavaScript之禅' },
       {
-        text: 'GavaScript 1.x', items: [
-          { text: '插件', link: '/GavaScript 1.x/插件' },
+        text: 'GavaScript 1.x',
+        collapsed: false,
+        link: '/GavaScript 1.x',
+        items: [
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
+          { text: '插件', link: '/GavaScript 1.x/插件' },
+          { text: 'CLI', link: '/GavaScript 1.x/CLI' },
+          { text: '底层语法', link: '/GavaScript 1.x/底层语法' },
+          { text: 'Bugs', link: '/GavaScript 1.x/Bugs' },
+          {
+            text: '方法',
+            collapsed: true,
+            items: [
+              { text: '输入', link: '/GavaScript 1.x/方法/输入' },
+              { text: '输出', link: '/GavaScript 1.x/方法/输出' },
+              { text: '分支', link: '/GavaScript 1.x/方法/分支' },
+              { text: '循环', link: '/GavaScript 1.x/方法/循环' },
+              { text: '文件', link: '/GavaScript 1.x/方法/文件' },
+              { text: '运算', link: '/GavaScript 1.x/方法/运算' },
+              { text: '数据', link: '/GavaScript 1.x/方法/数据' },
+            ]
+          },
           { text: '', link: '' },
         ]
       },
       {
-        text: '建议与反馈', items: [
+        text: 'GavaScript-Web',
+        collapsed: false,
+        link: '/GavaScript-Web',
+        items: [
+          { text: '更新日志', link: '/GavaScript-Web/更新日志' },
+          { text: '底层语法', link: '/GavaScript-Web/底层语法' },
+          { text: '', link: '' },
+        ]
+      },
+      {
+        text: '建议与反馈',
+        collapsed: false,
+        items: [
           { text: '反馈查询', link: 'https://ccnqubr58jmo.feishu.cn/share/base/view/shrcnzq7Rvf9NxJKRPUOxW5YUxe' },
           { text: '提交反馈', link: 'https://ccnqubr58jmo.feishu.cn/share/base/form/shrcncDoBEosgzREGYQLK7nclyh' },
         ]
