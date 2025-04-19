@@ -8,7 +8,7 @@
 ::: details 说明
 Bug按照发现时间排序 
 
-bug前缀：【未修复】【修复中】【已修复】【快照】（仅在快照版本中出现）
+bug前缀：<Badge type="danger" text="未修复"/> <Badge type="warning" text="修复中"/> <Badge type="info" text="已修复"/> <Badge type="tip" text="快照"/> （仅在快照版本中出现）
 
 等级：
 - 【崩溃】：阻碍开发或测试工作的问题；造成系统崩溃、死机、死循环，导致数据库数据丢失，与数据库连接错误，主要功能丧失，基本模块缺失等问题。
@@ -20,9 +20,9 @@ bug前缀：【未修复】【修复中】【已修复】【快照】（仅在�
 
 触发：【总是触发】【经常触发】【有时触发】【特定条件触发】
 :::
-::: details 【示例】#0 示例 Bug
+::: details <Badge type="danger" text="示例"/> #0 示例 Bug
 
-存在版本（实际Bug可以点击跳转版本）：开始版本 ~ 结束版本
+存在版本：开始版本 ~ 结束版本
 
 等级：【BUG等级】
 
@@ -43,9 +43,9 @@ bug前缀：【未修复】【修复中】【已修复】【快照】（仅在�
 有问题的输出（或操作）
 ```
 :::
-::: details 【已修复】#1 注释代码执行
+::: details <Badge type="info" text="已修复"/> #1 注释代码执行
 
-存在版本：~
+存在版本：0.1~0.6.1
 
 等级：【严重】
 
@@ -65,9 +65,9 @@ bug前缀：【未修复】【修复中】【已修复】【快照】（仅在�
 这不应该被输出
 ```
 :::
-::: details 【已修复】#2 解释器报错退出
+::: details <Badge type="info" text="已修复"/> #2 解释器报错退出
 
-存在版本：~
+存在版本：0.1~0.7
 
 等级：【次要】
 
@@ -91,9 +91,9 @@ ZeroDivisionError: division by zero
 【程序退出】
 ```
 :::
-::: details 【快照】【已修复】#3 解释器报错
+::: details <Badge type="tip" text="快照"/> <Badge type="info" text="已修复"/> #3 解释器报错
 
-存在版本：~
+存在版本：25w11a~25w12b
 
 等级：【崩溃】
 
@@ -116,9 +116,9 @@ GavaScript 1.x 25w12a
 >>> _
 ```
 :::
-::: details 【快照】【修复中】#4 控制台输出失效
+::: details <Badge type="tip" text="快照"/> <Badge type="warning" text="修复中"/> #4 控制台输出失效
 
-存在版本：~
+存在版本：25w11a~25w12b
 
 等级：【崩溃】
 
