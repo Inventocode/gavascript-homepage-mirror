@@ -14,6 +14,10 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    editLink:{
+      pattern: 'https://gitee.com/gavascript-dev/homepage/blob/master/docs/:path',
+      text: '在 Gitee 上编辑此页面'
+    },
     outline: {
       label: '目录'
     },
@@ -49,6 +53,7 @@ export default defineConfig({
           { text: '插件', link: '/GavaScript 1.x/插件' },
           { text: 'CLI', link: '/GavaScript 1.x/CLI' },
           { text: '底层语法', link: '/GavaScript 1.x/底层语法' },
+          { text: 'Bugs', link: '/GavaScript 1.x/Bugs' },
           {
             text: '方法',
             collapsed: true,
