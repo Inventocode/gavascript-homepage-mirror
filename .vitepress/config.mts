@@ -72,6 +72,7 @@ export default defineConfig({
         link: '/GavaScript-Web',
         items: [
           { text: '更新日志', link: '/GavaScript-Web/更新日志' },
+          { text: '底层语法', link: '/GavaScript-Web/底层语法' },
           { text: '', link: '' },
         ]
       },
