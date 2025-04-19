@@ -19,21 +19,20 @@ export default defineConfig({
     },
     logo: '/icon.svg',
     nav: [{
-        text: '手册',
-        items: [
-          { text: '总览', link: '/欢迎来到GavaScript手册' },
-          { text: 'GavaScript 1.x', link: '/GavaScript 1.x' },
-          { text: 'GavaScript-Web', link: '/GavaScript-Web' }
-        ]
-      },
-      { text: '下载', link: '/download' },
-      
+      text: '手册',
+      items: [
+        { text: '总览', link: '/欢迎来到GavaScript手册' },
+        { text: 'GavaScript 1.x', link: '/GavaScript 1.x' },
+        { text: 'GavaScript-Web', link: '/GavaScript-Web' }
+      ]
+    },
+    { text: '下载', link: '/download' },
     ],
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'medium',
+        timeStyle: 'medium'
       }
     },
     sidebar: [
@@ -85,11 +84,9 @@ export default defineConfig({
         ]
       },
       {
-        text: '交流群',
-        collapsed: false,
-        items: [
-          { text: '群规', link: '/交流群/群规' },
-          { text: '违规记录1', link: '' },
+        text: '交流群', items: [
+          { text: '交流群群规', link: '/交流群/群规' },
+          { text: '2025-2-15 转生后并不老实のcika', link: '/交流群/2025-2-15 转生后并不老实のcika' },
           { text: '违规记录2', link: '' },
         ]
       }
