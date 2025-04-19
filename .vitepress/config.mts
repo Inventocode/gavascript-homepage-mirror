@@ -91,8 +91,8 @@ export default defineConfig({
       {
         text: '交流群', items: [
           { text: '交流群群规', link: '/交流群/群规' },
-          { text: '2025-2-15 转生后并不老实のcika', link: '/交流群/2025-2-15 转生后并不老实のcika' },
           { text: '违规记录2', link: '' },
+          { text: '2025-2-15 转生后并不老实のcika', link: '/交流群/2025-2-15 转生后并不老实のcika' },
         ]
       }
     ],
