@@ -52,7 +52,7 @@ export default defineConfig({
           { text: '底层语法', link: '/GavaScript 1.x/底层语法' },
           {
             text: '方法',
-            collapsed: true,
+            collapsed: true, 
             items: [
               { text: '输入', link: '/GavaScript 1.x/方法/输入' },
               { text: '输出', link: '/GavaScript 1.x/方法/输出' },
