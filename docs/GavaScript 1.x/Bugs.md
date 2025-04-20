@@ -43,7 +43,7 @@ bug前缀：<Badge type="danger" text="未修复"/> <Badge type="warning" text="
 有问题的输出（或操作）
 ```
 :::
-::: details <Badge type="info" text="已修复"/> #1 注释代码执行
+::: details <fixed-bug/> #1 注释代码执行
 
 存在版本：0.1~0.6.1
 
@@ -65,7 +65,7 @@ bug前缀：<Badge type="danger" text="未修复"/> <Badge type="warning" text="
 这不应该被输出
 ```
 :::
-::: details <Badge type="info" text="已修复"/> #2 解释器报错退出
+::: details <fixed-bug/> #2 解释器报错退出
 
 存在版本：0.1~0.7
 
@@ -91,7 +91,7 @@ ZeroDivisionError: division by zero
 【程序退出】
 ```
 :::
-::: details <Badge type="tip" text="快照"/> <Badge type="info" text="已修复"/> #3 解释器报错
+::: details <snap-bug/> <fixed-bug/> #3 解释器报错
 
 存在版本：25w11a~25w12b
 
@@ -116,7 +116,7 @@ GavaScript 1.x 25w12a
 >>> _
 ```
 :::
-::: details <Badge type="tip" text="快照"/> <Badge type="warning" text="修复中"/> #4 控制台输出失效
+::: details <snap-bug/> <fixing-bug/>  #4 控制台输出失效
 
 存在版本：25w11a~25w12b
 
@@ -139,3 +139,49 @@ kongzhitai.xieru(114514)
 （空）
 ```
 :::
+<script>
+class snapBug extends HTMLElement {
+    constructor() { super(); }
+    connectedCallback() {
+        let badge = document.createElement('span');
+        badge.setAttribute('class', 'VPBadge tip');
+        badge.innerHTML = '快照';
+        this.parentNode.insertBefore(badge, this);
+        this.parentNode.removeChild(this);
+    }
+}
+class fixingBug extends HTMLElement {
+    constructor() { super(); }
+    connectedCallback() {
+        let badge = document.createElement('span');
+        badge.setAttribute('class', 'VPBadge warning');
+        badge.innerHTML = '修复中';
+        this.parentNode.insertBefore(badge, this);
+        this.parentNode.removeChild(this);
+    }
+}
+class fixedBug extends HTMLElement {
+    constructor() { super(); }
+    connectedCallback() {
+        let badge = document.createElement('span');
+        badge.setAttribute('class', 'VPBadge info');
+        badge.innerHTML = '已修复';
+        this.parentNode.insertBefore(badge, this);
+        this.parentNode.removeChild(this);
+    }
+}
+class notFixedBug extends HTMLElement {
+    constructor() { super(); }
+    connectedCallback() {
+        let badge = document.createElement('span');
+        badge.setAttribute('class', 'VPBadge danger');
+        badge.innerHTML = '未修复';
+        this.parentNode.insertBefore(badge, this);
+        this.parentNode.removeChild(this);
+    }
+}
+customElements.define("snap-bug", snapBug);
+customElements.define("fixed-bug", fixedBug);
+customElements.define("fixing-bug", fixingBug);
+customElements.define("not-fixed-bug", notFixedBug);
+</script>

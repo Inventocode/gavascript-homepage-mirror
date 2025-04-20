@@ -50,7 +50,7 @@ export default defineConfig({
         link: '/GavaScript 1.x',
         items: [
           { text: '更新日志', link: '/GavaScript 1.x/更新日志' },
-          { text: '插件', link: '/GavaScript 1.x/插件' },
+          { text: '插件 <Badge type="tip" text=">0.7" />', link: '/GavaScript 1.x/插件' },
           { text: 'CLI', link: '/GavaScript 1.x/CLI' },
           { text: '底层语法', link: '/GavaScript 1.x/底层语法' },
           { text: 'Bugs', link: '/GavaScript 1.x/Bugs' },

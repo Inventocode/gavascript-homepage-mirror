@@ -4,6 +4,7 @@ layout: home
 
 hero:
   name: "GavaScript"
+  title: GavaScript
   text: "未来最热门的编程语言"
   tagline: 未来，GavaScript可能会成为全球最热门的编程语言，因此在热门前学习这门编程语言是很有必要的。
   image:
@@ -108,6 +109,6 @@ const members = [
 </script>
 <br>
 
-# 核心团队
+## 核心团队
 
 <VPTeamMembers size="small" :members />
