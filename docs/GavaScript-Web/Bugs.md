@@ -2,7 +2,7 @@
 
 如果您发现了Bug可以：
 - 前往[交流群](https://qm.qq.com/q/rKS0ZPrkis)反馈
-- 提交[Issue](https://gitee.com/gavascript-dev/gavascript-1.x/issues)
+- 提交[Issue](https://gitee.com/gavascript-dev/gavascript-web/issues)
 - 提交[问卷](https://ccnqubr58jmo.feishu.cn/share/base/form/shrcncDoBEosgzREGYQLK7nclyh)
 
 ::: details 说明
@@ -41,101 +41,5 @@ bug前缀：<Badge type="danger" text="未修复"/> <Badge type="warning" text="
 正确的输出（或操作）
 【实际】
 有问题的输出（或操作）
-```
-:::
-::: details <Badge type="info" text="已修复"/> #1 注释代码执行
-
-存在版本：0.1~0.6.1
-
-等级：【严重】
-
-触发：【总是触发】
-
-描述：在**以“;”结尾**的注释后插入的代码仍然会被执行
-
-例：
-
-```text
-代码：
-//注释;kongzhitai.xieru("这不应该被输出");
-
-【正确】
-
-【实际】
-这不应该被输出
-```
-:::
-::: details <Badge type="info" text="已修复"/> #2 解释器报错退出
-
-存在版本：0.1~0.7
-
-等级：【次要】
-
-触发：【总是触发】
-
-描述：在解释器中运行错误的代码**报错**时解释器会**立即退出**
-
-例：
-
-```text
-GavaScript 1.x v0.7
->>> kongzhitai.xieru(1/0)
-【正确】
-错误：division by zero
->>> _
-【实际】
-Traceback (most recent call last):
-  File "gs.exe", line 114514, in <module>
-...
-ZeroDivisionError: division by zero
-【程序退出】
-```
-:::
-::: details <Badge type="tip" text="快照"/> <Badge type="info" text="已修复"/> #3 解释器报错
-
-存在版本：25w11a~25w12b
-
-等级：【崩溃】
-
-触发：【总是触发】
-
-描述：在解释器中运行**任何代码**都会输出**错误：name 'plist' is not defined**
-
-例：
-
-```text
-【打开解释器】
-警告：你正在使用一个快照版本[25w12a]，可能会存在一些问题，请不要在正式环境使用此版本。
-GavaScript 1.x 25w12a
->>> 114514
-【正确】
-114514
->>> _
-【实际】
-错误：name 'plist' is not defined
->>> _
-```
-:::
-::: details <Badge type="tip" text="快照"/> <Badge type="warning" text="修复中"/> #4 控制台输出失效
-
-存在版本：25w11a~25w12b
-
-等级：【崩溃】
-
-触发：【总是触发】
-
-描述：方法失效，不输出任何内容
-
-处理备注：将在**可能**的25w14a 0.7.2 0.8修复
-
-例：
-
-```text
-代码：
-kongzhitai.xieru(114514)
-【正确】
-114514
-【实际】
-（空）
 ```
 :::
